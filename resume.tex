@@ -1,0 +1,106 @@
+% LaTeX resume using res.cls
+\documentclass[margin,10pt]{res}
+\usepackage{enumitem}
+\usepackage{sourcesanspro}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{slantsc}
+\usepackage[letterspace=85]{microtype}
+\usepackage[style=iso]{datetime2}
+\newsectionwidth{0.8in}
+\setlist[itemize]{leftmargin=*}
+\renewcommand{\familydefault}{\sfdefault}
+\name{\begin{minipage}[t]{\textwidth}
+% \includegraphics[height=0.5cm]{dllu.pdf}
+% \hspace{0.5cm}
+\Large
+\textsc{grant butler}
+\vspace{6mm}
+\end{minipage}}
+\address{\begin{minipage}[t]{\textwidth}
+\sc
+\lsstyle
+\href{https://github.com/gronk-droid}{github.com/gronk-droid}
+\hfill
+gronk.droid@gmail.com
+\hfill
+1-904-423-9358
+\hfill
+melbourne, fl
+% \\
+% \href{https://gronk-droid.github.io}{gronk-droid.github.io}
+\end{minipage}}
+\begin{document}
+\begin{resume}
+
+    \section{\sc \lsstyle skills}
+        \textbf{Languages:} Python, C17, JavaScript, \textsc{HTML/CSS}, Kotlin      \\
+        \textbf{Technologies:} Git/GitHub, Make, SQL, Markdown, LaTex, Mermaid      \\
+        \textsc{THT/SMT} Soldering, Film/Digital Photography, Proficiency in Adobe Lightroom, Illustrator, and Photoshop \\
+        \textbf{Operating Systems:} \textsc{GNU}/Linux, MacOS, Windows              \\
+        USA Citizen. Fluent in English. Conversational in German and Dutch.
+
+    \section{\sc \lsstyle school}
+        \href{https://www.fit.edu/}{\textbf{Florida Institute of Technology}}, \textit{\textbf{B.S.} Computer Science}
+        \hfill
+        \textsc{\bfseries\lsstyle 2020-08 --- \textsc{present}}\\
+        \textsc{advisor:} \href{https://www.linkedin.com/in/william-shoaff-883408/}{Dr. William Shoaff}
+        \hfill
+        GPA: 3.76
+
+% \section{\sc \lsstyle work}
+%     \href{https://tesla.com}{\textbf{Tesla}}, Palo Alto, CA\hfill \textsc{\bfseries\lsstyle 2021-10 -- present}\\
+%     \textit{Senior Software Engineer --- Autopilot}\hfill C++, Python
+%     \vspace{0.5em}
+%     \begin{itemize}
+%         \item Surface reconstruction for autolabelling; simultaneous localization and mapping (\textsc{slam}).
+%     \end{itemize}
+%
+%     \href{https://tempus-ex.com}{\textbf{Tempus Ex Machina}}, San Francisco, CA\hfill \textsc{\bfseries\lsstyle 2020-09 -- 2021-10}\\
+%     \textit{Staff Software Engineer --- Computer Vision}\hfill Python, Rust, TypeScript
+%     \vspace{0.5em}
+%     \begin{itemize}
+%         \item Automatic single-shot monocular camera to sports field calibration;
+%         \item Real time deep learning multi-object tracking and human pose estimation;
+%         \item Full data lifecycle including: data extraction; administrating labelling platform and annotators; training (Tensorflow/Keras); experiment tracking (MLflow/WandB); deployment (\textsc{onnx}).
+%     \end{itemize}
+%
+%     \href{https://ouster.io}{\textbf{Ouster}}, San Francisco, CA\hfill \textsc{\bfseries\lsstyle 2016-09 -- 2020-09}\\
+%     \textit{Lead Software Engineer --- 3D Mapping}\hfill C++, Python, OpenGL
+%     \vspace{0.5em}
+%     \begin{itemize}
+%         \item Architected and implemented core algorithms as the first software engineer, including:
+%         \begin{itemize}
+%             \item Real time multi-lidar 6DoF \textsc{slam} with: < 1\% drift, loop closure, robust GPS georeferencing;
+%             \item Deep learning lidar feature extraction; continuous-time SE(3) trajectory optimizer;
+%             \item Extrinsic calibration; ground segmentation; OpenGL and WebGL visualisers.
+%         \end{itemize}
+%     \end{itemize}
+%
+% \section{\sc \lsstyle intern/ra}
+%     \textbf{Facebook}, \textit{Save for later team}\hfill \textsc{\bfseries\lsstyle 2015-05 -- 2015-08}\\
+%     Full stack development for Save For Later functionality.\hfill hack/\textsc{php}
+%
+%     \textbf{CMU}, \textit{Autonomous Yamaha Viking} \hfill \textsc{\bfseries\lsstyle 2014-08 -- 2016-08}\\
+%     Real time visual-inertial-lidar \textsc{slam} for autonomous off-road vehicle.\hfill C++11
+%
+%     \textbf{Facebook}, \textit{People, places and things team}\hfill \textsc{\bfseries\lsstyle 2014-05 -- 2014-08}\\
+%     Collaborative filtering and data pipelines to recommend Facebook pages.\hfill C++, HiveQL, Hack/\textsc{php}
+%
+%     \textbf{UBC}, \textit{Ultrasound volumetric image registration}\hfill \textsc{\bfseries\lsstyle 2011-05 -- 2011-12}\\
+%     GPU-accelerated registration of ultrasound and \textsc{cat} scans for epidural administration.\hfill C++, \textsc{cuda}
+%
+%     \textbf{UBC}, \textit{Bat multilateration and classification}\hfill \textsc{\bfseries\lsstyle 2010-01 -- 2010-04}\\
+%     Tracking and classifying bat species such as {\em Myotis lucifugus} with microphone array.\hfill \textsc{matlab}
+
+\end{resume}
+
+\vfill
+
+\begin{minipage}[t]{\textwidth}
+    \flushright
+    \small
+    \sc \lsstyle
+    \hfill updated \today
+\end{minipage}
+\end{document}
