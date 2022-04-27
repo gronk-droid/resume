@@ -7,61 +7,86 @@
 \usepackage{slantsc}
 \usepackage[letterspace=85]{microtype}
 \usepackage[style=iso]{datetime2}
+\usepackage{ragged2e}
 \newsectionwidth{0.8in}
 \setlist[itemize]{leftmargin=*}
 \renewcommand{\familydefault}{\sfdefault}
+
 \name{\begin{minipage}[t]{\textwidth}
 % \includegraphics[height=0.5cm]{dllu.pdf}
 % \hspace{0.5cm}
-\Large
-\textsc{grant butler}
-\vspace{6mm}
+\begin{Center}
+    \Huge
+    \textsc{grant butler}
+\end{Center}
+\vspace{1mm}
 \end{minipage}}
 \address{\begin{minipage}[t]{\textwidth}
 \sc
 \lsstyle
-\href{https://github.com/gronk-droid}{github.com/gronk-droid}
-\hfill
-gronk.droid@gmail.com
-\hfill
-1-904-423-9358
-\hfill
-melbourne, fl
-% \\
-% \href{https://gronk-droid.github.io}{gronk-droid.github.io}
+\begin{Center}
+    \large
+    \href{https://github.com/gronk-droid}{github.com/gronk-droid}
+    \hspace{0.5em}
+    gronk.droid@gmail.com
+    \\
+    1-904-423-9358
+    \hspace{0.5em}
+    melbourne, fl
+    % \\
+    % \href{https://gronk-droid.github.io}{gronk-droid.github.io}
+\end{Center}
 \end{minipage}}
 \begin{document}
 \begin{resume}
 
-    \section{\sc \lsstyle skills}
-        \textbf{Languages:} Python, C, JavaScript, \textsc{HTML/CSS}, Kotlin            \\
-        \textbf{Technologies:} Git/GitHub, Make, SQL, Markdown, LaTex, Mermaid          \\
-        \textsc{THT/SMT} Soldering, Film/Digital Photography, UI/UX Design, Adobe Apps  \\
-        \textbf{Operating Systems:} \textsc{GNU}/Linux, MacOS, Windows                  \\
-        USA Citizen. Fluent in English. Conversational in German and Dutch.
-
-    \section{\sc \lsstyle school}
-        \href{https://www.fit.edu/}{\textbf{Florida Tech}}, \textit{B.S. Computer Science}
+    \section{\sc \lsstyle education}
+        \href{https://www.fit.edu/}{\textbf{Florida Tech}}, \textit{Bachelor of Science}
         \hfill
         \textsc{\bfseries\lsstyle 2020-08 --- present}
         \\
-        \textsc{advisor:} \href{https://www.linkedin.com/in/william-shoaff-883408/}{Dr. William Shoaff}
+        Computer Science
+        % \textsc{advisor:} \href{https://www.linkedin.com/in/william-shoaff-883408/}{Dr. William Shoaff}
         \hfill
         GPA: 3.35
+        \vspace{0.5em}
+        \begin{description}
+            \item[\textbf{Courses:}]
+        \end{description}
+        \begin{itemize}
+            \item \textit{Management and Processing of Big Data}
+            \item \textit{Web Applications}
+            \item \textit{Analysis of Algorithms}
+        \end{itemize}
+        \begin{description}
+            \item[\textbf{Projects:}]
+        \end{description}
+        \begin{itemize}
+            \item Google Calendar extension to group calendars and share.
+            \hfill
+            Python
+            \item \href{https://github.com/gronk-droid/cse4081/blob/607f375da2e1c2aedf6d1330a80537ea768698d2/2_group_assignment/docs/report.pdf}{Report} about Dinic's algorithm and its analysis.
+            \item Typing test with random strings and typing stats.
+            \hfill
+            \textsc{masm}
+        \end{itemize}
 
     \section{\sc \lsstyle work}
-        \href{https://www.fit.edu/reslife/}{\textbf{Florida Tech -- Residence Life}}, Melbourne, FL
+        \textbf{Florida Tech Psychology -- Programming for Primates}
         \hfill
-        \textsc{\bfseries\lsstyle 2021-08 --- present}
+        \textsc{\bfseries\lsstyle 2020-08 --- 2021-05}
         \\
-        \textit{Resident Assistant}
+        \textit{Lead Programmer}
         \hfill
-        Teamwork, Graphic Design
+        Python, C, C++
         \vspace{0.5em}
         \begin{itemize}
-            \item Worked with a team of sixty to put on campus wide events with attendance of over five hundred people.
-            \item Created advertisements and graphics with Adobe apps, Figma, and Affinity Designer to promote events.
-            \item Performed duties for on campus residents providing conflict resolution between roommates and information about campus activities and resources.
+            \item Built GUI for cognitive research of primates for Linux.
+            \item Worked with team of 3 to build 3D printed enclosure.
+            \begin{itemize}
+                \item Modular dispensary of reward for completion of tasks.
+                \item Touch interface for primate.
+            \end{itemize}
         \end{itemize}
 
         \href{https://floridatechsports.com/}{\textbf{Florida Tech -- Athletics Communication}}
@@ -82,22 +107,25 @@ melbourne, fl
             \item Controlled live broadcasts of games.
         \end{itemize}
 
-        \textbf{Florida Tech Psychology -- Programming for Primates}
+        \href{https://www.fit.edu/reslife/}{\textbf{Florida Tech -- Residence Life}}, Melbourne, FL
         \hfill
-        \textsc{\bfseries\lsstyle 2020-08 --- 2021-05}
+        \textsc{\bfseries\lsstyle 2021-08 --- present}
         \\
-        \textit{Lead Programmer}
+        \textit{Resident Assistant}
         \hfill
-        Python, C, C++
+        Teamwork, Graphic Design
         \vspace{0.5em}
         \begin{itemize}
-            \item Built GUI for cognitive research of primates.
-            \item Worked with team of 3 to build 3D printed enclosure.
-            \begin{itemize}
-                \item Modular dispensary of reward for completion of tasks.
-                \item Touch interface for primate.
-            \end{itemize}
+            \item Worked with a team of sixty to put on campus wide events with attendance of over five hundred people.
+            \item Created advertisements and graphics with Adobe apps, Figma, and Affinity Designer to promote events.
+            \item Performed duties for on campus residents providing conflict resolution between roommates and information about campus activities and resources.
         \end{itemize}
+
+    \section{\sc \lsstyle skills}
+        \textbf{Languages:} Python, C, JavaScript, \textsc{HTML/CSS}, Kotlin            \\
+        \textbf{Technologies:} Git/GitHub, Make, SQL, Markdown, LaTex, Mermaid          \\
+        \textbf{Applications:} Illustrator, Photoshop, Lightroom, Adobe Creative Cloud, Affinity Designer\\
+        \textbf{Other Skills:} \textsc{THT/SMT} Soldering, Film/Digital Photography, UI/UX Design
 
 % \section{\sc \lsstyle work}
 %     \href{https://tesla.com}{\textbf{Tesla}}, Palo Alto, CA\hfill \textsc{\bfseries\lsstyle 2021-10 -- present}\\
