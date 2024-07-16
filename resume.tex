@@ -1,15 +1,16 @@
 % LaTeX resume using res.cls
 \documentclass[margin,10pt]{res}
 \usepackage{enumitem}
-\usepackage{sourcesanspro}
+\usepackage[default]{sourcesanspro}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{slantsc}
 \usepackage[letterspace=85]{microtype}
 \usepackage[style=iso]{datetime2}
 \usepackage{ragged2e}
+\begin{document}
 \newsectionwidth{0.8in}
-\setlist[itemize]{leftmargin=*}
+% \setlist[itemize]{leftmargin=*}
 \renewcommand{\familydefault}{\sfdefault}
 
 \name{\begin{minipage}[t]{\textwidth}
@@ -17,7 +18,7 @@
 % \hspace{0.5cm}
 \begin{Center}
     \Huge
-    \textsc{grant butler}
+    \textsc{Grant Butler}
 \end{Center}
 \vspace{1mm}
 \end{minipage}}
@@ -35,50 +36,55 @@
     melbourne, fl
 \end{Center}
 \end{minipage}}
-\begin{document}
 \begin{resume}
 
-    \section{\sc \lsstyle education}
+    \section{\sc education}
         \href{https://www.fit.edu/}{\textbf{Florida Institute of Technology}}, \textit{Bachelor of Science}
         \hfill
-        \textsc{\bfseries\lsstyle 08-2020 --- 12-2023}
+        \textsc{\bfseries Aug 2020 --- May 2024}
         \\
         Computer Science
-        % \textsc{advisor:} \href{https://www.linkedin.com/in/william-shoaff-883408/}{Dr. William Shoaff}
         \hfill
         GPA: 3.35
         \vspace{0.5em}
         \begin{description}
-            \item[\textbf{Courses:}]
+            \item[\textbf{Key Courses:}]
         \end{description}
         \begin{itemize}
             \item \textit{Management and Processing of Big Data}
-            \item \textit{Web Applications}
             \item \textit{Analysis of Algorithms}
+            \item \textit{Machine Learning}
         \end{itemize}
         \begin{description}
             \item[\textbf{Projects:}]
         \end{description}
         \begin{itemize}
-            \item Google Calendar extension to group calendars and share.
+            \item \href{https://github.com/gronk-droid/fit2024spring/blob/trunk/cse4224/projects/project_2/report/project2_report.pdf}{Harmony Across Genres}: Unsupervised model connecting music.
             \hfill
-            Python
+            \textsc{python}
+            \item \href{https://github.com/fit-history-app}{FIT History App}: Node.js App for guided tours on FIT's campus.
+            \hfill
+            \textsc{javascript}
+            \item Functional Map of the World built with \href{https://github.com/fmow}{FMOW} Dataset.
+            \hfill
+            \textsc{javascript}
+            \item \href{https://github.com/gronk-droid/fit2024spring/blob/trunk/cse4224/projects/project_1/project_1.ipynb}{Supervised Learning} that simulates and compares accuracy of models.
+            \hfill
+            \textsc{python}
             \item \href{https://github.com/gronk-droid/cse4081/blob/607f375da2e1c2aedf6d1330a80537ea768698d2/2_group_assignment/docs/report.pdf}{Report} about Dinic's algorithm and its analysis.
-            \item Typing test with random strings and typing stats.
-            \hfill
-            \textsc{masm}
+            
         \end{itemize}
 
-    \section{\sc \lsstyle skills}
+    \section{\sc skills}
         \textbf{Languages:} Python, JavaScript, \textsc{HTML/CSS}, Java, C           \\
-        \textbf{Technologies:} Git/GitHub, Make, SQL, Markdown, LaTex, Mermaid          \\
-        \textbf{Applications:} Illustrator, Photoshop, Lightroom, Adobe Creative Cloud, Affinity Designer\\
-        \textbf{Other Skills:} \textsc{THT/SMT} Soldering, Film/Digital Photography, UI/UX Design
+        \textbf{Technologies:} Git/GitHub, Make, SQL, NoSQL, Node.js, Apache Spark, Markdown, LaTeX
 
-    \section{\sc \lsstyle work}
-        \textbf{Florida Tech Psychology -- Programming for Primates}
+    \section{\sc work}
+        \textsc{Florida Institute of Technology}
+        \\\\
+        \textbf{Psychology -- Programming for Primates}
         \hfill
-        \textsc{\bfseries\lsstyle 08-2020 --- 05-2021}
+        \textsc{\bfseries Aug 2020 --- May 2021}
         \\
         \textit{Lead Programmer}
         \hfill
@@ -87,33 +93,23 @@
         \begin{itemize}
             \item Built GUI for cognitive research of primates for Linux.
             \item Worked with team of 3 to build 3D printed enclosure.
-            \begin{itemize}
-                \item Modular dispensary of reward for completion of tasks.
-                \item Touch interface for primate.
-            \end{itemize}
         \end{itemize}
 
-        \href{https://floridatechsports.com/}{\textbf{Florida Tech -- Athletics Communication}}
+        \href{https://floridatechsports.com/}{\textbf{Athletics Communication}}
         \hfill
-        \textsc{\bfseries\lsstyle 08-2021 --- present}
+        \textsc{\bfseries Aug 2021 --- May 2023}
         \\
         \textit{Communications Assistant}
         \hfill
-        Digital/Film Photography, Photo/Video Editing
+        Photo/Video and Editing
         \vspace{0.5em}
         \begin{itemize}
             \item Took on roles in Photography and Videography.
-            \begin{itemize}
-                \item Headshots and portraits in studio lighting.
-                \item Photo and video editing done in Adobe apps.
-                \item Film development and scanning.
-            \end{itemize}
-            \item Controlled live broadcasts of games.
         \end{itemize}
 
-        \href{https://www.fit.edu/reslife/}{\textbf{Florida Tech -- Residence Life}}, Melbourne, FL
+        \href{https://www.fit.edu/reslife/}{\textbf{Residence Life}}, Melbourne, FL
         \hfill
-        \textsc{\bfseries\lsstyle 2021-08 --- present}
+        \textsc{\bfseries Aug 2021 --- May 2022}
         \\
         \textit{Resident Assistant}
         \hfill
@@ -124,14 +120,26 @@
             \item Created advertisements and graphics with Adobe apps, Figma, and Affinity Designer to promote events.
             \item Performed duties for on campus residents providing conflict resolution between roommates and information about campus activities and resources.
         \end{itemize}
+        \vfill
+        \textbf{Dean Stewart Photography}
+        \hfill
+        \textsc{\bfseries May 2024 --- Present}
+        \\
+        \textit{Photographer}
+        \hfill
+        Photography
+        \vspace{0.5em}
+        \begin{itemize}
+            \item Studio portraiture for high school seniors and business.
+        \end{itemize}
 \end{resume}
 
 \vfill
 
-% \begin{minipage}[t]{\textwidth}
-%     \flushright
-%     \small
-%     \sc \lsstyle
-%     \hfill updated \today
-% \end{minipage}
+\begin{minipage}[t]{\textwidth}
+    \flushright
+    \small
+    \sc \lsstyle
+    \hfill updated \today
+\end{minipage}
 \end{document}
